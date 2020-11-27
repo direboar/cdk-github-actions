@@ -20,7 +20,7 @@ export const getResources = async (req: Request, res: Response) => {
   try {
 //     const dbid = req.params.dbid;
 //     const resourceJson = await aWSResourceAccessor.selectResources(dbid);
-    res.send({ result : "getResources" });
+    res.send({ result : "GET_Resources" });
   } catch (e) {
     // handleError(e,res)
   }
@@ -34,7 +34,7 @@ export const getResource = async (req: Request, res: Response) => {
     try {
   //     const dbid = req.params.dbid;
   //     const resourceJson = await aWSResourceAccessor.selectResources(dbid);
-      res.send({ result : "getResource" });
+      res.send({ result : "GET_Resource" });
     } catch (e) {
       // handleError(e,res)
     }
