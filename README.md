@@ -11,4 +11,6 @@
 - cdkプロジェクトで開発する。
 - cdkプロジェクトで、npm run buildAndDeployを実行すると、アプリ側のnpm run buildを実行後、cdkのbuild、synth、deployまで一括で実施する。
 
-
+### GithubAtionによるCICD
+- masterブランチにpushをすると、それをきっかけにアプリケーションのビルド～cdkのdeployまで実行される。
+- 実現方式は、以下のURLを参照。 https://dev.classmethod.jp/articles/cdk-github-actions/
