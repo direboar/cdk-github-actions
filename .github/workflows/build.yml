@@ -30,6 +30,10 @@ jobs:
       working-directory: ./app
     - run: npm run buildAndDeployCI
       working-directory: ./cdk
+      env:
+        AWS_DEFAULT_REGION: 'us-east-1'
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: Archive Distribution
       uses: actions/upload-artifact@v2
       with:
